@@ -27,6 +27,8 @@ phases:
       - docker push $REPOSITORY_URI:$TAG
       - export AWS_ACCESS_KEY_ID="AKIA4BNKLEXPAJQXUJ5T"
       - export AWS_SECRET_ACCESS_KEY="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"
+      - export Default_region_name="us-east-2"
+      - export Default_output_format="json"
       # - CREDENTIALS=$(aws sts assume-role --role-arn $EKS_KUBECTL_ROLE_ARN --role-session-name codebuild-kubectl --duration-seconds 900)
       # - export AWS_ACCESS_KEY_ID="$(echo ${CREDENTIALS} | jq -r '.Credentials.AccessKeyId')"
       # - export AWS_SECRET_ACCESS_KEY="$(echo ${CREDENTIALS} | jq -r '.Credentials.SecretAccessKey')"
