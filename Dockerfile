@@ -1,4 +1,4 @@
-FROM python:stretch
+FROM python
 RUN mkdir /myapp
 COPY . /myapp
 WORKDIR /myapp
