@@ -5,7 +5,7 @@
 *.pyo
 env/
 env*
-dist
+dist/
 build/
 *.egg
 *.egg-info/
